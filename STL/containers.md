@@ -276,31 +276,31 @@ int main() {
 
 `，编写出更灵活和更易于维护的代码。
 
-    ```cpp
-    #include <iostream>
-    #include <vector>
+```cpp
+#include <iostream>
+#include <vector>
 
-    int main() {
-        // 默认构造
-        std::vector<int> my_vector1;
+int main() {
+    // 默认构造
+    std::vector<int> my_vector1;
 
-        // 带大小的构造
-        std::vector<int> my_vector2(10);// 包含10个默认值初始化的元素
-        
-        // 带特定初始值的构造
-        std::vector<int> my_vector3(10, 2);// 包含10个值为2的元素
+    // 带大小的构造
+    std::vector<int> my_vector2(10);// 包含10个默认值初始化的元素
+    
+    // 带特定初始值的构造
+    std::vector<int> my_vector3(10, 2);// 包含10个值为2的元素
 
-        // 拷贝构造函数
-        std::vector<int> my_vector4(my_vector3);
+    // 拷贝构造函数
+    std::vector<int> my_vector4(my_vector3);
 
-        // 添加和删除元素
-        my_vector1.push_back(1);
-        my_vector.emplace_back(2);
+    // 添加和删除元素
+    my_vector1.push_back(1);
+    my_vector.emplace_back(2);
 
-        std::cout << "first element:" << my_vector1[0];
-    }
+    std::cout << "first element:" << my_vector1[0];
+}
 
-    ```
+```
 2. deque
     双端队列，支持快速随机访问，可以在两端高效插入删除元素。
 3. list
